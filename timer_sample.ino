@@ -87,7 +87,7 @@ void writeSD() {
 
 void setup() {
     M5.begin();
-    //dacWrite(25, 0); // Speaker OFF
+    dacWrite(25, 0); // Speaker OFF
     Serial.begin(115200);
     M5.lcd.println("push B start, push A stop");
 }
